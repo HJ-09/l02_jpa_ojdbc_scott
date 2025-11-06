@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 //CrudRepository ⇒ 심플함. CRUD만 有
-//JpaRepository ⇒ 구체적(패키징)
+//JpaRepository ⇒ 구체적(페이징)
 @Repository
 public interface DeptRepository extends JpaRepository<DeptEntity,Integer> { //제네릭(무조건 자료형만 사용가능)... 모라고?
     //ㅁㅔ서드 쿼리 만들게. 근데 조회는 안하고 order는 할거야. id 역순으로!

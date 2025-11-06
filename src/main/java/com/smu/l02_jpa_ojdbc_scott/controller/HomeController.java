@@ -16,8 +16,8 @@ public class HomeController {
     //스프링 빈팩토리에서 생성된 객체를 주입받을게 ~
     @Autowired
     private DataSource dataSource; //이 친구가 connection을 반환햐
-    // 객체 지향 문법 ⇒ 객체가 필요하면 생성 → 일반적인 흐름
-    // 객체 지향 문법 ⇒ 만들어진 객체 주입 → 제어가 역전(Inversion of Control, Dependency Injection)
+    // 객체 지향 문법에서 ⇒ 객체가 필요하면 생성 → 일반적인 흐름
+    // 객체 지향 문법에서 ⇒ 만들어진 객체 주입 → 제어가 역전(Inversion of Control, Dependency Injection), 일반적이지 않은 흐름
 
 
     @GetMapping("/")
